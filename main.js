@@ -2,13 +2,13 @@
 
 test.style.display = 'none';
 */
-function open_div(boutton, id) {
+function open_div(bouton, id) {
 	// on recupere le id de la div qu'on veut cacher
 	var div = document.getElementById(id);
 //	var div = document.querySelector('id');
 
 	if (div.style.display === "none" ){
-		// si div cachee : on affiche et on change valeur du bouton
+		// si div cachee : on affiche et on change valeur bouton
 		div.style.display= "block";
 		bouton.innerHTML = "masquer les elements centraux";
 	} else{
