@@ -16,5 +16,16 @@ function open_div(bouton, id) {
 		div.style.display = "none";
 		bouton.innerHTML = "afficher les elements centraux";
 	}
+};
+
+function send_google(id) {
+	// fonction qui va retourner le texte entre dans la barre recherceh
+	//ds une nouvelle fenetre avec la recherche google correspondante
+
+	// recuper le texte de la barre recherche du parametre id
+	var texte_entre = document.getElementById(id).value ;
+
+	// il faut aller a cette adresse via return :
+	return window.location.href=( 'https://www.google.fr/search?source=hp&q='+ texte_entre) ;
 }
 

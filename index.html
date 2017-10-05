@@ -62,12 +62,13 @@
 
 		<!-- bloc recherche -->
 		<div >
-			<input type="text" name="barre_search" class="searchbar">		
+			<input type="text" name="barre_search" class="searchbar" id="barresearch">
 		</div>
 
 		<!-- bloc bouton google -->
 		<div class= "bouton_google">
-			<input class= "recherche" type="button" value="Recherche ElgooG">
+			<input class= "recherche" type="button" value="Recherche ElgooG"
+			onclick="send_google('barresearch');" >
 
 			<input class= "chance" type="button"  value="J'ai de la chance">	
 		</div>
