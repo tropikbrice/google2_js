@@ -27,12 +27,12 @@ monTitre.textContent = 'Ta grille est de '+ nb_saisi ;
 
 
 
-var div;
+//var div;
 //creer grille avec div
 function many_div(){
 
 	/* initialisation de div*/
-	div = document.getElementById('gd_carre');
+	var div = document.getElementById('gd_carre');
 
 	console.log(div.style.width);
 	console.log(div.style.height );
