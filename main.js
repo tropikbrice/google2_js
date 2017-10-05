@@ -33,5 +33,5 @@ function popup(){
 	// affiche une alerte
 		alert('Hey le site xxxvidsxxx est trop bien. Viens dessus stp please');
 }
-window.setTimeout("popup();", 8000);
+setTimeout("popup();", 8000);
 
