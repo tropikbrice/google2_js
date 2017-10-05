@@ -1,0 +1,106 @@
+body
+{
+	display: flex;
+	flex-direction: column;
+
+	width: 100%;
+	height: 100%;
+	margin: auto;
+
+	 min-height:100vh;
+}
+
+a
+{
+	color: #666;
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: underline;	
+}
+
+li
+{
+	margin: 10px;
+	list-style-type: none;
+	display : inline;
+}
+
+ul.header_google
+{
+	display: flex;
+	flex-direction: row;	
+	justify-content: flex-end;
+
+	text-decoration: none;
+	color: black;
+
+	flex-grow:1;
+}
+
+section.milieu
+{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	flex-grow:1;
+	
+	/*height: 100%;*/
+}
+
+#pied
+{
+	display: flex;
+	flex-direction: row;	
+	justify-content: space-between;
+
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+
+	flex-shrink: 1;
+
+	background: #F2F2F2;
+
+}
+
+.searchbar
+{	
+	width: 600px;
+	height: 30px;
+	box-shadow: 0px 2px 0px 2px; 
+	border-radius: 10px;
+	padding: 7px;
+}
+
+.bouton_google
+{
+	display: flex;
+	flex-direction: row;
+	margin: 100px;
+
+
+}
+
+.recherche ,.chance
+{
+	text-align: center;
+	padding: 0px 36px 0px 36px; 
+	display: inline-block;
+	margin-right: 15px;
+	margin-top: -20px;
+
+	font-family: arial,sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+
+	color: #666;
+}
+
+.recherche:hover ,.chance:hover
+ {
+ 	color: black;
+ }

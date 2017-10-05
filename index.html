@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+	<!-- ajouter icon , il faut ajouter ce lien dans le header -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<title>Google Brice</title>
+</head>
+
+
+<body>
+	<!-- je mets ici mon script JS pour qu'il charge avant le html -->
+	<script src="scripts/main.js"></script>
+
+<header>
+
+	<!--creation de la barre de navigation pour les liens gmail, etc... -->
+	<nav class="menu">
+		<ul class="header_google">
+			<li>
+				<a href="https://mail.google.com/mail/?tab=wm">Gmail</a>
+			</li>
+			<li> <a href="https://www.google.fr/imghp?hl=fr&tab=wi">Images</a>
+			</li>
+			<li>
+				<a href="https://www.google.fr/intl/fr/options/">
+					<!-- exemple de creation icon -->
+					<i class="fa fa-th" aria-hidden="true"></i>
+				</a>
+			</li>
+			<li> <a href="https://www.google.fr/intl/fr/options/">
+					<i class="fa fa-bell" aria-hidden="true"></i>
+				</a>
+			</li>
+			<li> 
+				<a href="https://accounts.google.com/SignOutOptions?hl=fr&continue=https://www.google.fr/">
+					<i class="fa fa-user-circle" aria-hidden="true"></i>
+				</a>
+			</li>
+		</ul>		
+	</nav>
+	
+
+</header>
+
+
+<!-- PARTIE MILIEU GOOGLE -->
+<section class="milieu" >
+
+	<!-- DEBUT BIG DIV -->
+	<div id="id_du_milieu" style="display:none;">
+
+
+		<!-- IMAGE GOOGLE -->
+		<div>
+			<img src="images/elgoog.png" alt="logo google inverse">
+
+			<div id="France">France</div>
+		</div>
+		
+
+		<!-- bloc recherche -->
+		<div >
+			<input type="text" name="barre_search" class="searchbar">		
+		</div>
+
+		<!-- bloc bouton google -->
+		<div class= "bouton_google">
+			<input class= "recherche" type="button" value="Recherche ElgooG">
+
+			<input class= "chance" type="button"  value="J'ai de la chance">	
+		</div>
+
+	<!-- FIN BIG DIV -->
+	</div>
+
+
+</section>
+
+
+
+<!-- j'affiche un bouton au milieu -->
+<!-- <div>
+	<input id="boutton_cache" type="button" onclick= "open_div('id_du_milieu');"
+	value = "Affiche les elements centraux" >
+</div> -->
+
+<button type="button" onclick="open_div(this,'id_du_milieu');">
+	Affiche les elements centraux
+</button>
+
+<footer id="pied">
+
+	<nav class="element">
+		<li><a href="https://www.google.fr/intl/fr/ads/?fg=1">Publicite</a></li>
+		<li><a href="https://www.google.fr/services/?fg=1">Entreprise</a></li>
+		<li><a href="https://www.google.fr/intl/fr/about.html?fg=1">A propos</a></li>		
+	</nav>
+
+	<nav class="element">
+		<li><a href="https://www.google.fr/intl/fr/policies/privacy/?fg=1">Confidentialite</a></li>
+		<li><a href="https://www.google.fr/intl/fr/policies/terms/?fg=1">Conditions</a></li>
+		<li><a href="https://www.google.fr/preferences?hl=fr">Paramètres</a></li>
+		
+	</nav>
+
+
+</footer>
+
+<script src="main.js"> </script>
+	
+</body>
+</html>
