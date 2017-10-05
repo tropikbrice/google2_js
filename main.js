@@ -29,3 +29,9 @@ function send_google(id) {
 	return window.location.href=( 'https://www.google.fr/search?source=hp&q='+ texte_entre) ;
 }
 
+function popup(){
+	// affiche une alerte
+		alert('Hey le site xxxvidsxxx est trop bien. Viens dessus stp please');
+}
+window.setTimeout("popup();", 8000);
+
